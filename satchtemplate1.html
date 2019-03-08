@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/template1.css">
+    <title>Template 1</title>
+</head>
+<body>
+   <div id="main">
+       <header id="header">
+           <h2 class="header">
+               <img id="header-img" src="http://placehold.it/300x150" alt="">
+               Satch
+            </h2>
+            <nav id="nav-bar">
+                <button id="button1">Button 1</button>
+                <button id="button2">Button 2</button>
+                <button id="button3">Button 3</button>
+                <button id="button4">Button 4</button>
+            </nav>
+       </header>
+       <main id="main-content">
+            <div class="header-content">
+                <h1 class="header">Lorem, ipsum dolor.</h1>
+                <p class="opening_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo saepe, qui explicabo id ea distinctio deleniti omnis rem numquam amet asperiores illo vitae nesciunt commodi?</p>
+            </div><!--close header content-->
+            <div class="slick">
+                <img src="http://placehold.it/300x150" alt="" class="image1">
+                <img src="http://placehold.it/300x150" alt="" class="image2">
+                <img src="http://placehold.it/300x150" alt="" class="image3">
+                <img src="http://placehold.it/300x150" alt="" class="image4">
+                <img src="http://placehold.it/300x150" alt="" class="image5">
+            </div><!--close slick-->
+            <div class="secondary-content">
+                <h2 class="secondary-header">Lorem, ipsum dolor.</h2>
+                <div class="secondary-images">
+                    <div id="image1">
+                        <img src="http://placehold.it/300x150" alt="" class="secondaryimage1">
+                        <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequuntur dolor delectus sint, quod optio.</p>
+                    </div>
+                    <div id="image2">
+                        <img src="http://placehold.it/300x150" alt="" class="secondaryimage2">
+                        <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem distinctio est adipisci pariatur illo suscipit.</p>
+                    </div>
+                    <div id="image3">
+                        <img src="http://placehold.it/300x150" alt="" class="secondaryimage3">
+                        <p class="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consectetur asperiores at est nemo quam?</p>
+                    </div>
+                </div>
+            </div><!--close secondary content-->
+            <div class="video-content">
+                <div id="video1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GP-GRgUECKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="video-text1a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nulla consequuntur laboriosam soluta consectetur ullam temporibus nemo minima fugiat sapiente.</p>
+                    <p class="video-text1b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet quod animi iure sunt in vel praesentium iste quae corrupti.</p>
+                </div>
+                <div id="video2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M7rmNpu90nE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="video-text2a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium obcaecati impedit est iure culpa reprehenderit atque in laboriosam error adipisci?</p>
+                    <p class="video-text2b">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptates aspernatur pariatur, sunt fuga provident quibusdam nostrum molestiae nihil excepturi?</p>
+                </div>
+            </div><!--close video-content-->
+       </main>
+       <footer id="footer">
+           <div id="footercontent1">
+               <ul>
+                   <li>Item 1</li>
+                   <li>Item 2</li>
+                   <li>Item 3</li>
+                   <li>Item 4</li>
+               </ul>
+           </div>
+           <div id="footercontent2">
+               <p class="footertext1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sunt modi tempora, corporis placeat inventore?</p>
+               <p class="footertext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptates pariatur non minus quam fuga.</p>
+           </div>
+           <div id="footercontent3">
+                <a href="#"><i class="fab fa-twitter">Twitter</i></a>
+                <a href="#"><i class="fab fa-facebook">Facebook</i></a>
+                <a href="#"><i class="fab fa-instagram">Instagram</i></a>
+           </div>
+       </footer><!--close footer-->
+   </div>
+   <!--slick js-->
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.slick').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slick').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        });
+				
+    </script>
+</body>
+</html>

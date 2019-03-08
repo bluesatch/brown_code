@@ -1,0 +1,45 @@
+body {
+    background: #e1e6ec;
+}
+
+#header {
+    display: grid; /* creates grids withing div */
+    grid-template-columns: 50% 50%; /* sets grid at 50% of screen!!! */ 
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+header {
+    position: relative;
+}
+#header-img {
+    margin-left: -46px; /* not pushing to the left. Is it the parent?*/
+}
+
+
+
+#nav-bar {
+    text-align: right;
+}
+
+.header-content {
+    position: relative;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.header {
+    /*margin: auto;*/
+    text-align: center;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.opening_text {
+    width: 33%;
+    margin: auto;
+    /*text-align: center;*/
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
