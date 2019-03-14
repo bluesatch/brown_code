@@ -1,5 +1,14 @@
 body {
     background: #e1e6ec;
+    font-family: Arial, Helvetica, sans-serif; /* getting rid of font-family property on other declarations*/
+}
+
+h1 {
+    color: #66a5f1;
+}
+
+h2 {
+    color: #66a5f1;
 }
 
 #header {
@@ -17,7 +26,7 @@ header {
 .header { /* I had two items with the .header class */
     position: relative;
     font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 #header-img {
@@ -37,7 +46,7 @@ header {
 .main-header {
     text-align: center;
     font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
+   
 }
 
 
@@ -45,7 +54,7 @@ header {
     width: 33%;
     margin: auto;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    if;
 }
 
 .slick {
@@ -68,11 +77,10 @@ header {
 
 .secondary-header {
     text-align: center;
-}
+}  
 .secondary-images { /* need to center the images */
-    position: relative;
     display: flex;
-    text-align: center;
+    justify-content: center; /* justify center when using flex */
 }
 #image1 {
     width: 300px;
@@ -90,4 +98,64 @@ header {
 
 .video-content{
     margin-top: 45px;
+}
+
+#video1 {
+    display: grid; /* GRID IS AWESOME!!!*/
+    grid-template-columns: 50% 50%;
+}
+
+.video-text1 {
+    width: 560px;
+}
+
+#video2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 25px;
+}
+
+.video-text2 {
+    width: 560px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+    border-top: 2px solid gray;
+    background: #66a5f1;
+}
+
+#footercontent2 {
+    width: 300px;
+    font-size: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-top: 5px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+#footercontent3 {
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.fab {
+    padding-right: 25px;
 }
